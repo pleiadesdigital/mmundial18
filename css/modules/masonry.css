@@ -1,0 +1,124 @@
+.blog {
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .grid {
+    margin: 0px auto;
+    .grid-item {
+      float: left;
+      width: 100%;
+      margin: 0px;
+      height: auto;
+      margin-bottom: 1.5rem;
+
+      @mixin atSmallMedium {
+        width: 280px;
+        margin: 0px 10px 1rem;
+      }
+
+      @mixin atMedium {
+        width: 270px;
+      }
+
+      article {
+        padding-right: 0px;
+        border-right: none;
+
+        .index-box {
+          max-width: 600px;
+          padding: 0px;
+          display: block;
+          margin: 0px auto 20px;
+          border-bottom: 1px dotted #d6d6d6;
+
+
+          .entry-header {
+            margin-bottom: 0.5rem;
+            .single-post-thumbnail {
+              margin-top: 0px;
+            }
+            img {
+              width: 100%;
+              height: auto;
+              display: block;
+              margin: 0px auto;
+              border-radius: 2px;
+              padding-top: 0px;
+              transition: all 0.3s;
+              &:hover {
+                filter: brightness(120%);
+              }
+            }
+
+            .entry-title {
+              font-size: 1.4rem;
+              line-height: 1;
+              font-weight: 300;
+              margin: 0.75rem 0px 0.25rem 0px;
+              a:link,
+              a:visited {
+                color: $petrolLight;
+                text-decoration: none;
+                line-height: 1;
+                transition: color 0.2s;
+                &:hover,
+                &:focus {
+                  color: $brightYellow;
+                }
+              }
+            }
+
+            .entry-meta {
+              font-size: 0.9rem;
+              color: $beigeNew;
+              line-height: 1;
+              a:link,
+              a:visited {
+                color: inherit;
+                font-weight: 600;
+                text-decoration: none;
+                &:hover,
+                &:focus {
+                  text-decoration: underline;
+                }
+              }
+            }
+
+          }
+
+          .entry-summary {
+            margin-bottom: 1rem;
+            p {
+              color: $lightBlue;
+              line-height: 1.4;
+            }
+          }
+
+          .entry-footer {
+            margin-bottom: 1rem;
+
+            .continue-reading {
+              font-size: 1rem;
+              a:link,
+              a:visited {
+                color: $lightBlue;
+                text-decoration: none;
+                &:hover,
+                &:focus {
+                  text-decoration: underline;
+                }
+              }
+            }
+
+          }
+
+
+        }
+
+      }
+
+    }
+  }
+}

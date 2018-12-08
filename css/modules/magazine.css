@@ -1,0 +1,40 @@
+.mag {
+
+  &__box-medium {
+    padding: 20px;
+    background-color: $beigeNewLighter;
+    border: 1px solid $beigeNewLighter;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    @mixin atSmallMedium {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 45%;
+      min-width: 200px;
+      min-height: 320px;
+      margin: 0px 0px 20px 20px;
+    }
+
+    @mixin atMedium {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 30%;
+      min-width: 200px;
+      height: 400px;
+      margin: 0px 0px 20px 20px;
+    }
+
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.07);
+  }
+
+  &
+
+  &__item {
+    p {
+      line-height: 1.2;
+      font-size: 0.9rem;
+      font-weight: 100;
+    }
+  }
+
+}

@@ -1,0 +1,24 @@
+.row {
+  @mixin clearfix;
+
+  @mixin atSmallMedium {
+    &--equal-height {
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 0px 0px 0px -10px;
+    }
+  }
+
+
+}/* .row */
+
+
+
+
+
+
+
+
+

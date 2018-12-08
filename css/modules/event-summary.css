@@ -1,0 +1,76 @@
+.event-summary {
+  position: relative;
+  padding-left: 107px;
+  min-height: 77px;
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+
+  &__title a {
+    color: $black;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  &__date {
+    text-decoration: none;
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 14px 0 11px 0;
+    color: #FFF;
+    border-radius: 50%;
+    background-color: $mainBlue;
+    width: 80px;
+    height: 80px;
+    line-height: 1;
+    transition: opacity .33s;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .22);
+  }
+
+  &__date:hover {
+    /* opacity: .75; */
+  }
+
+  &__date--beigeNew {
+    background-color: $beigeNew;
+    &:hover {
+      background: linear-gradient($beigeNew, color($beigeNewLight));
+    }
+  }
+
+  &__date--petrol {
+    background-color: $petrol;
+    &:hover {
+      background: linear-gradient($petrol, color($petrolLight));
+    }
+  }
+
+  &__date--darkPurple {
+    background-color: $darkPurple;
+    &:hover {
+      background: linear-gradient($darkPurple, color($darkPurple b(+40%) s(+80%)));
+    }
+  }
+
+  &__month {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__day {
+    display: block;
+    font-size: 2.02rem;
+    font-weight: 700;
+    .fa {
+      margin-top: 12%;
+    }
+  }
+
+}

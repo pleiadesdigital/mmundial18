@@ -1,0 +1,36 @@
+.book {
+
+  &__box-medium {
+    padding: 20px;
+    background-color: #FFFFF0;
+    border: 1px solid #FFFFF0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    @mixin atSmallMedium {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 45%;
+      min-width: 200px;
+      margin: 0px 0px 10px 10px;
+    }
+
+    @mixin atMedium {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 30%;
+      min-width: 200px;
+      margin: 0px 0px 10px 10px;
+    }
+
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.07);
+  }
+
+  &__item {
+    p {
+      line-height: 1.2;
+      font-size: 0.9rem;
+      font-weight: 100;
+    }
+  }
+
+}
