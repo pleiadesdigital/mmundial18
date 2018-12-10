@@ -8,7 +8,7 @@
   ));
 ?>
 
-<div class="container container--narrow page-section">
+<div class="container page-section">
   <div class="grid">
     <?php while (have_posts()) : the_post(); ?>
       <div class="grid-item">
@@ -17,6 +17,16 @@
     <?php endwhile; ?>
   </div>
 
+  <br>
+  <center>
+    <?php
+      echo paginate_links(array(
+        'prev_text'     => __('<< Previous'),
+        'next_text'     => __('Next >>'),
+        'type'          => 'plain'
+      ));
+    ?>
+  </center>
 </div>
 
 <?php get_footer(); ?>

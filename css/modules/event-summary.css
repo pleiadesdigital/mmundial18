@@ -5,6 +5,10 @@
   padding-bottom: 1px;
   margin-bottom: 20px;
 
+  @include mixin atSmall() {
+    height: 150px;
+  }
+
   &__title a {
     color: $black;
     text-decoration: none;

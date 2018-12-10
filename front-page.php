@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
   <div class="page-banner">
-  	<div class="page-banner__bg-image" style="background-image: url(<?php //echo get_theme_file_uri('/images/aparapasaco3.jpg'); ?>);"></div>
+  	<div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/mm-home-cover.jpg'); ?>);"></div>
     <div class="page-banner__content container t-center c-white">
       <h1 class="headline headline--large main--title">La Mariposa Mundial</h1>
       <!-- <h2 class="headline headline--medium">Revista de Literatura</h2> -->
@@ -43,7 +43,8 @@
         <h2 class="headline headline--small-plus t-center">Latest Posts</h2>
         <?php
           $args = array(
-            'posts_per_page'      => 2
+            'posts_per_page'      => 2,
+            'post_type'           => 'post'
           );
           $homepage_posts = new WP_Query($args);
 
@@ -57,7 +58,7 @@
           </a>
           <div class="event-summary__content">
             <h5 class="event-summary__title headline headline--tiny"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-            <p><?php if (has_excerpt()) { echo get_the_excerpt(); } else  { echo wp_trim_words(get_the_content(), 18); } ?><br><a href="<?php the_permalink(); ?>" class="nu gray">Read more</a></p>
+            <p><?php if (has_excerpt()) { echo get_the_excerpt(); } else  { echo wp_trim_words(get_the_content(), 22); } ?><br><a href="<?php the_permalink(); ?>" class="nu gray">Read more</a></p>
           </div>
         </div>
         <?php endwhile; wp_reset_postdata(); ?>

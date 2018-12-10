@@ -1,0 +1,11 @@
+.container {
+  &__featImage {
+    display: block;
+    margin-bottom: 2rem;
+    & img {
+      display: block;
+      margin: 0px auto;
+
+    }
+  }
+}

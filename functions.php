@@ -63,7 +63,7 @@ function mmundial_features() {
 	add_image_size('professor-landscape', 400, 260, true);
 	add_image_size('professor-portrait', 480	, 650, true);
 	add_image_size('page-banner', 1500, 350, true);
-	add_image_size( 'blog-thumb', 800, 540, true);
+	add_image_size('feat-image', 960, 600, array('center', 'top'));
 	/*register_nav_menu('header-menu', 'Header Menu');
 	register_nav_menu('footer-menu-one', 'Footer Menu One');
 	register_nav_menu('footer-menu-two', 'Footer Menu Two');*/

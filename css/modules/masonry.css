@@ -1,3 +1,4 @@
+.archive,
 .blog {
   .grid:after {
     content: '';
@@ -13,13 +14,14 @@
       height: auto;
       margin-bottom: 1.5rem;
 
-      @mixin atSmallMedium {
-        width: 280px;
+      /* @mixin atSmallMedium {
+        width: 300px;
         margin: 0px 10px 1rem;
-      }
+      } */
 
       @mixin atMedium {
-        width: 270px;
+        width: 320px;
+
       }
 
       article {
